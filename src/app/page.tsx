@@ -1,4 +1,5 @@
 import Header from "@/features/header";
+import Hero from "@/features/hero";
 
 export default function Home(){
   return(
@@ -8,6 +9,7 @@ export default function Home(){
     <Header/>
 
     {/*hero*/}
+    <Hero/>
 
     {/*how it works*/}
 
