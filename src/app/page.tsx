@@ -1,4 +1,5 @@
 import MaxWContainer from "@/_components/max-w-container";
+import BentoBoxGrid from "@/features/bento-box-grid";
 import BrowseItems from "@/features/browse-items";
 import Footer from "@/features/footer";
 import Header from "@/features/header";
@@ -14,6 +15,7 @@ export default function Home(){
     <Header/>
     {/*hero*/}
     <Hero/>
+    <BentoBoxGrid/>
     <MaxWContainer>
       {/*how it works*/}
       <HowItWorks/>
