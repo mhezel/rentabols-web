@@ -28,7 +28,8 @@ async function Header() {
             </div>
 
             <div className="flex items-center">
-                <Link href="#"
+                <Link href={
+                `${session ? "/my-listings" : "api/auth/signin"}`}
                 className={cn(buttonVariants({variant: 'outline'}),
                 "shadow hidden md:flex md: mr-2"
                 )}
@@ -40,7 +41,7 @@ async function Header() {
                     <div className="flex text-slate-500">
                         <Menu/>
                         {session?.user  && 
-                            <span>Welcome, {session.user.name}!</span>
+                            <span>Welcome, {session.user.name?.split(' ')[0]}!</span>
                         }
                     </div>
                 </DropdownMenuTrigger>
